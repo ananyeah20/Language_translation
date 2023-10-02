@@ -2,12 +2,12 @@
   
 This code sets up a Transformer-based sequence-to-sequence model for Spanish-English translation. I
 
-**DATA PREPROCESSING-
-**
+##DATA PREPROCESSING-
+
 Preprocesses the data by splitting it into English and Spanish pairs and adding special tokens [start] and [end] to indicate the start and end of a sentence.
 
-**Data Shuffling and Splitting:
-**
+##Data Shuffling and Splitting:
+
 Shuffles the dataset and splits it into training, validation, and test sets.
 
 
