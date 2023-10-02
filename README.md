@@ -2,60 +2,60 @@
   
 This code sets up a Transformer-based sequence-to-sequence model for Spanish-English translation. I
 
-##DATA PREPROCESSING-
+1) DATA PREPROCESSING-
 
 Preprocesses the data by splitting it into English and Spanish pairs and adding special tokens [start] and [end] to indicate the start and end of a sentence.
 
-##Data Shuffling and Splitting:
+2) Data Shuffling and Splitting:
 
 Shuffles the dataset and splits it into training, validation, and test sets.
 
 
-**Vocabulary and Text Vectorization:
-**
+3) Vocabulary and Text Vectorization:
+
 Sets up text vectorization layers for English and Spanish texts.
 Standardizes the text by converting it to lowercase and removing punctuation.
 
 
-**Dataset Formatting:
-**
+4) Dataset Formatting:
+
 Defines functions to format the dataset, converting text to integer sequences.
 Slices the target sequences for decoder input and output.
 
 
-**Dataset Creation and Batching:
-**
+5) Dataset Creation and Batching:
+
 Creates TensorFlow datasets for training and validation, batching them.
 
 
-**Model Definition:
-**
+6) Model Definition:
+
 Defines the Transformer Encoder, Positional Embedding, and Transformer Decoder as explained in your previous message.
 
 
-**Model Instantiation:
-**
+7) Model Instantiation:
+
 Instantiates the encoder and decoder models and establishes the connections between them.
 
 
-**Model Compilation:
-**
+8) Model Compilation:
+
 Compiles the full Transformer model using RMSprop optimizer and sparse categorical cross-entropy loss.
 
 
-**Model Training:
-**
+9) Model Training:
+
 Trains the model on the training dataset for one epoch (you might want to increase this for better convergence).
 Provides validation data.
 
 
-**Model Summary:
-**
+10) Model Summary:
+
 Prints out a summary of the model architecture.
 
 
-**Training Results:
-**
+11) Training Results:
+
 After training, the model's performance metrics (loss and accuracy) on both training and validation sets are displayed.
 
 
